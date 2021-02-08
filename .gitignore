@@ -1,4 +1,5 @@
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# Ignorando o css
+style/css
+
+# Ignorando os modulos
+node_modules

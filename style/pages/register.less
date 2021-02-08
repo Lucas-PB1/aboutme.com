@@ -1,0 +1,44 @@
+@import "../less_inc/mixins.less";
+@import "../less_inc/variaveis.less";
+
+#registro {
+    .center();
+    .fixed();
+    background-image: url("/images/backs/38.png");
+    padding-bottom  : 3%;
+
+    form {
+        .center();
+        font-family: @font-body;
+
+        h2 {
+            color      : #ffffff;
+            font-weight: bolder;
+        }
+
+        #err_reg {
+            right           : 2%;
+            border-radius   : 10px;
+            font-size       : 1.1em;
+            text-align      : center;
+            color           : #ff0000;
+            padding: 7px;
+            background-color: #ffffff;
+        }
+
+        input {
+            padding  : 3px;
+            width    : 150%;
+            max-width: 363px;
+            border   : 1px solid #000000;
+        }
+
+        h2,
+        input,
+        button,
+        a {
+            margin-top: 10px;
+        }
+    }
+
+}

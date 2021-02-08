@@ -1,0 +1,30 @@
+@import "../less_inc/mixins.less";
+@import "../less_inc/variaveis.less";
+
+#login {
+    .center();
+    .fixed();
+    background-image: url("/images/backs/38.png");
+
+    form {
+        .center();
+        font-family: @font-body;
+
+        h2 {
+            color: #ffffff;
+        }
+
+        input {
+            padding: 3px;
+            width  : 170%;
+            border : 2px solid #000000;
+        }
+
+        h2,
+        input,
+        a,
+        button {
+            margin-top: 10px;
+        }
+    }
+}

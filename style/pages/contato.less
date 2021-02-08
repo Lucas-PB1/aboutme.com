@@ -1,0 +1,30 @@
+@import "../less_inc/mixins.less";
+@import "../less_inc/variaveis.less";
+
+#contact {
+    .fixed();
+    display         : flex;
+    align-items     : center;
+    font-size       : 1.2em;
+    background-image: url("/images/backs/21.png");
+
+    #contatos {
+
+        width      : 150%;
+        padding    : 40px;
+        color      : #000000;
+        font-family: @font-body;
+
+        h3,
+        p {
+            a {
+                text-decoration: none;
+                color          : #000000;
+
+                &:hover {
+                    color: #d6c3c3;
+                }
+            }
+        }
+    }
+}

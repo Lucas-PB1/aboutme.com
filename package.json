@@ -1,0 +1,23 @@
+{
+  "name": "aboutme.com",
+  "version": "1.0.0",
+  "description": "Um site personalizavel",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lucas-PB1/aboutme.com.git"
+  },
+  "author": "Lucas Soares Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lucas-PB1/aboutme.com/issues"
+  },
+  "homepage": "https://github.com/Lucas-PB1/aboutme.com#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1"
+  }
+}

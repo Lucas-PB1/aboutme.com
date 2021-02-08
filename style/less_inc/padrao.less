@@ -1,0 +1,31 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+input {
+    &:focus {
+        box-shadow: 0 0 0 0;
+        border    : 0 none;
+        outline   : 0;
+    }
+}
+
+body {
+    display            : grid;
+    grid-template-rows : 1fr 2fr 90px;
+    grid-template-areas: "head""body""foot";
+}
+
+#header {
+    grid-area: head;
+}
+
+.content {
+    grid-area: body;
+}
+
+#footer {
+    grid-area: foot;
+}

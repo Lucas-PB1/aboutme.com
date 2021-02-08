@@ -1,0 +1,26 @@
+@import "../less_inc/mixins.less";
+@import "../less_inc/variaveis.less";
+
+#about {
+    .center();
+    .fixed();
+    font-family     : @font-body;
+    background-image: url("/images/backs/5.png");
+
+    #main {
+        width           : 50%;
+        font-weight     : bold;
+        background-color: #ffffff;
+        border          : 2px solid #000000 !important;
+
+        div {
+            font-size : 20px;
+            border-top: 1px solid #000000;
+
+            p {
+                font-size    : 15px;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import "../less_inc/variaveis.less";
+
+#header {
+    display              : grid;
+    background-color     : #000000;
+    border-bottom        : 2px solid #ffffff;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 1fr 31px;
+    grid-template-areas  :
+        "logo titulo log"
+        "main main main";
+
+    a {
+        margin   : 6px;
+        grid-area: logo;
+        width    : auto;
+        height   : 150px;
+
+        #logo {
+            width : auto;
+            height: 150px;
+        }
+    }
+
+    h1 {
+        grid-area     : titulo;
+        align-self    : center;
+        justify-self  : center;
+        text-transform: uppercase;
+        color         : #f5f5f5;
+        font-family   : @font-title;
+
+    }
+
+    #pages {
+        grid-area  : main;
+        font-family: @font-title;
+        border-top : 1px solid #ffffff;
+
+        ul {
+            list-style-type: none;
+            
+            li {
+                padding: 3px;
+                float  : left;
+                display: block;
+
+                a {
+                    text-decoration: none;
+                    color          : #f5f5f5;
+                }
+
+                &:hover {
+                    background-color: #add8e6;
+                }
+            }
+        }
+    }
+
+    #enter {
+        grid-area  : log;
+        margin-top : 20px;
+        font-family: @font-body;
+
+        a {
+            padding         : 8px;
+            border-radius   : 15px;
+            text-align      : center;
+            text-transform  : uppercase;
+            color           : #000000;
+            background-color: #ffffff;
+            border          : 2px solid #ffffff;
+
+            &:hover {
+                text-decoration : none;
+                color           : #2b2727;
+                background-color: #ffebcd;
+            }
+        }
+
+        div {
+            display: flex;
+            .center();
+            #username {
+                color      : #ffffff;
+                font-family: @font-title;
+                font-style : oblique;
+            }
+
+            #thumbnail {
+                width      : 50px;
+                height     : 50px;
+                padding    : 3px;
+                margin-top: 10px;
+                border     : 1px solid white;
+               
+            }
+            #sair{
+                margin-top: 10px;
+                padding: 1px;
+                padding-right: 7px;
+                padding-left: 7px;
+                border-radius: 7px;
+                background-color: #ffffff;
+                height: 30px;
+                &:hover{
+                    background-color: #f5deb3;
+                }
+            }
+        }
+    }
+}
